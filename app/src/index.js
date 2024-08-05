@@ -5,7 +5,7 @@ import Layout from "./pages/LayoutPage";
 import Home from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import './index.css';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals'; 
 
 export default function App() {
   return (

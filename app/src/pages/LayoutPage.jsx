@@ -1,34 +1,35 @@
-import { Outlet, Link } from "react-router-dom";
+import '../styles/LayoutPage.css'
+import { Outlet, Link } from 'react-router-dom';
+import logo_image from '../assets/svg/image/logo-image.svg'
 
 const Layout = () => {
     return (
         <>
-            <header>
+            <header className="header-section">
+                <svg id='header-section__logo-image' src={logo_image} alt='logo-image'></svg>
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Главная</Link>
+                            <Link className='link' to="/">Главная</Link>
                         </li>
                         <li>
-                            <Link to="/">Про Гида</Link>
+                            <Link className='link' to="/">Про Гида</Link>
                         </li>
                         <li>
-                            <Link to="/">Программа тура</Link>
+                            <Link className='link' to="/">Программа тура</Link>
                         </li>
                         <li>
-                            <Link to="/">Стоимость</Link>
+                            <Link className='link' to="/">Стоимость</Link>
                         </li>
                         <li>
-                            <Link to="/">Блог</Link>
+                            <Link className='link' to="/">Блог</Link>
                         </li>
                         <li>
-                            <Link to="#contacts">Контакты</Link>
-                        </li>
-                        <li>
-                            <a href="/">Туры</a>
+                            <Link className='link' to="#contacts">Контакты</Link>
                         </li>
                     </ul>
                 </nav>
+                <button id='header-section__consultation-button' type='button'>Консультация</button>
             </header>
 
             <Outlet />

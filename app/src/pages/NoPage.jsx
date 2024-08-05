@@ -1,5 +1,6 @@
+import '../styles/NoPage.css'
 const NoPage = () => {
-    return 
+    return
 };
 
 export default NoPage;
