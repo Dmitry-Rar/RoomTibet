@@ -54,4 +54,18 @@
     line-height: 125%;
     letter-spacing: 0.01em;
     color: #fdfdfd;
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+}
+
+.logo-image {
+    mask-type: luminance;
+}
+
+.logo-image:hover {
+    color: var(--hover-color);
+}
+
+#header-section__consultation-button:hover {
+    background-color: #295555;
 }
